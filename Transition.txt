@@ -1,0 +1,9 @@
+Transition
+
+From transition property, you can animate any other property
+
+From the below way you can give the transition property 
+
+transition: background-color 200ms;  
+transition: transform 2s;  
+transition: all 1s ease-in-out;

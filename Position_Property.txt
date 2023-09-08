@@ -1,0 +1,3 @@
+Position Property
+
+position: absolute  // Means our element will now out of the normal flow of document ; it behaves like that they will not present any more and doesn't contain any width , height, margin and padding  

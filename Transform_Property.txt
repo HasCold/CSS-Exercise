@@ -1,0 +1,31 @@
+we are going to see the three properties of transform property 
+
+1. scale() -->> To zoom in the element
+2. rotate()
+3. translate()
+
+Transform-origin :- 
+transform-origin is the specified point where the transformation is going to start or applied
+
+transform-origin: center  -->> Expand from the center 
+transform-origin: top left  -->> Expand from the top corner left 
+transform-origin: bottom right  -->> Expand from the corner bottom right
+
+* alpha-channel is basically your opacity and will be set in between 0.1 to 1  -->>  rgba(255, 0, 64, 0.84);
+
+Rotate:-
+transform: rotate(270deg)  -->>  The property is used to rotate the container or element
+transform: rotate(-323deg);
+
+
+Translate:-
+
+The main difference betweeen the margin and transform : translate property is that margin will also push your x and y axis direction content and in the case of translate it will overlap your x and y axis content 
+
+transform: translateX(100px)  -->> Move the position of box or container or element in x-axis
+transform: translateY(100px) -->> Move the position of box or container or element in y-axis
+transform: translate(100px, 100px)  -->> if only translate means the first parameter is for the X-axis and second parameter is for Y-axis
+
+Box-Shadow
+
+box-shadow: x-direction-movement y-direction-movement blur-radius shadow-size(optional) color ; 
