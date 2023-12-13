@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 3px solid black;
+        }
+        .box{
+            width: 300px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: rgb(0, 247, 255);
+            margin: 10px;
+            border: 3px solid tan;
+            position: relative;
+            /* Animation Name  */
+            animation-name: rightMovement;
+            /* Animation duration  -->> will decide the timing required to show the tranformation in styling or show animation in given time  */
+            animation-duration: 4s;
+            /* Animation iteration count shows the animaton in specified continuity loop  */
+            /* animation-iteration-count: 2; */
+            animation-iteration-count: 2;
+            /* Animation delay :- Means how much time you want to delay in starting your animation */
+            animation-delay: 1s;
+            /* Animation timing function tells your animation speed curve */
+            animation-timing-function: linear;  
+            /* animation-timing-function: ease-in-out; */
+
+            /* Animaton direction */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+
+            /* animation-fill-mode:- will tells the frame what to start before or what we should done at the end of the frame completion */
+            animation-fill-mode: forwards;
+
+            /* Short hand notation of animation */
+
+            /* @keyframes duration | easing-function | delay |
+            iteration-count | direction | fill-mode | play-state | name */
+            animation: 3s linear 1s infinite alternate forwards running rightMovement;
+
+        }
+        @keyframes rightMovement {
+            from{
+                top: 0;
+                left: 0;
+            } to{
+                top: 0;
+                left: 1200px
+            }
+        }
+
+        #box2{
+            width: 300px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: rgb(0, 247, 255);
+            margin: 10px;
+            border: 3px solid tan;
+            position: relative;
+            animation: 3s ease-in 1s infinite alternate none running leftMovement;
+        }
+        @keyframes leftMovement {
+            from{
+                top: 500px;
+                left: 1200px;
+            } to{
+                top: 500px;
+                left: 0;
+            }
+        }
+
+        #circle{
+            width: 80px;
+            height: 80px;
+            border-radius: 50px;
+            background-color: rgb(0, 21, 255);
+            margin: 10px;
+            border: 3px solid firebrick;
+            position: relative;     
+            top: 20px;
+            left: 675px;
+            animation: 10s ease-in-out 1s infinite alternate none running circleMovement;
+        }
+        @keyframes circleMovement {
+            /* We have to define the state in percenatage terms */
+            0%{
+                top: 1%;
+                left: 5%;
+            }
+            30%{
+                top: 5%;
+                left: 90%;
+            }
+            60%{
+                top: 70%;
+                left: 10%;
+            }
+            100%{
+                top: 75%;
+                left: 90%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div id="box2">
+
+        </div>
+        <div id="circle">
+
+        </div>
+    </div>
+</body>
+</html>
