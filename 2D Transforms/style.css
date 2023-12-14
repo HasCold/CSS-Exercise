@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    border: 2px solid #000;
+    background-color: beige;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 3s linear .2s;
+    
+    p{
+        font-size: 36px;
+    }
+    
+}
+
+.box:hover{
+    /* transform: scale(0.5);
+    transform: rotate(45deg);
+
+    transform: skew(-20deg); */
+
+    transform: translate(100px, 100px);
+}

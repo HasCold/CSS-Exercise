@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(69, 62, 62);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows: repeat(4, 200px)  means 4 rows are size of 200px */
+    grid-template-rows: repeat(4, 200px);  
+    gap: 0.4rem;
+    padding: 0.5rem;
+}
+
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(48, 146, 146);
+    border: 2px solid white;
+        /* justify-self :- works with the horizontal scale  ; */
+    justify-self: center;
+        /* align-self :- works with the vertical scale ; */
+    align-self: center;  
+}
+
+/*
+justify-self :- To place the particular items in a horizontal scale
+align-self :- To place the particular item in a vertical scale
+
+justify-items :- To place the all the items in a container or parent in a horizontal scale 
+align-items :- To place the all the items in a container or parent in a vertical scale 
+*/
