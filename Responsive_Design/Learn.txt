@@ -1,0 +1,15 @@
+The screen which has more width and less length like desktop screen, laptop screen etc -- >> LandScape screen
+
+The screen which has less width and more length like mobile phone screen etc -- >> Portrait screen
+
+Understanding Units :- 
+- px  -->> Fixed Unit
+- %  -->> div takes the percentage from its parent element
+- vw, vh  -->> Size given to the according to screen size viewport-width, viewport-height 
+- vmax, vmin  -->> viewport-max ; viewport-min
+- em   ->> em is dependant on the parent elements
+- rem -->> rem is taking the sizing according to your root whih can be your screen size ; 1rem = 16px 
+
+Layout of website :- 
+absolute vs flex
+
