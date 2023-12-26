@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+}
+
+#back{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: #99999900; */
+}
+
+#workingarea{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+    /* border: 1px solid red; */
+}
+
+#nav{
+    width: 100%;
+    /* padding: top right bottom left ; top-bottom right-left */
+    padding: 40px 0;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+img{
+    height: 60px;
+}
+}
+
+#nav-right, #nav-left {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#nav a{
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#hero{
+    margin-top: 20px;
+    transform: translate(0%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+#heroleft{
+    min-width: 50%;
+    /* background-color: yellow; */
+}
+
+#heroleft .elem{
+    height: 9vw;
+    overflow: hidden;
+    /* position: relative; */
+    /* background-color: red; */
+}
+
+#heroleft .elem h1{
+    /* position: absolute; */
+    top: 100%;
+    left: 0;
+    line-height: .9;
+    font-family: "kajiro";
+    color: white;
+    font-weight: 100;
+    font-size: 11vw;
+}
+
+#heroleft button{
+    pointer-events: all;
+    padding: .8vw 3vw;
+    font-size: 3vw;
+    margin-top: 2vw;
+    font-family: "kajiro";
+}
+
+#heroright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 17%;
+    /* background-color: green; */
+    color: white;
+
+}
+
+#heroright p{
+    /* margin-bottom: 30px; */
+    font-size: 14px;
+    font-size: 300;
+    text-align: right;
+}
+
+#heroright #imagediv{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 170px;
+    background-image: url(https://images.unsplash.com/photo-1682687219640-b3f11f4b7234?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#heroright p{
+    margin-bottom: 20px;
+}
+
+
+
+/* position: relative; on the parent element:
+
+This establishes a positioning context for the child element. When you set position: relative; on an element, it means that the positioning of its children with position: absolute; will be relative to this parent, not to the document as a whole.
+position: absolute; left: 0; top: 50%; on the child element:
+
+position: absolute; takes the element out of the normal document flow,  */
